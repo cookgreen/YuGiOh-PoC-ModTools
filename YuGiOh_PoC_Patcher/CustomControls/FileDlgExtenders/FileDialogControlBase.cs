@@ -1,5 +1,5 @@
 //  Copyright (c) 2006, Gustavo Franco
-//  Copyright © Decebal Mihailescu 2007-2015
+//  Copyright ?Decebal Mihailescu 2007-2015
 
 //  Email:  gustavo_franco@hotmail.com
 //  All rights reserved.

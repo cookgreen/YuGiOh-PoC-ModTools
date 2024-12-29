@@ -173,6 +173,7 @@ namespace YuGiOh_PoC_Patcher
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Executable File|*.exe";
             if (openFileDialog.ShowDialog() != DialogResult.OK) return;
 
             string fileName = openFileDialog.FileName;

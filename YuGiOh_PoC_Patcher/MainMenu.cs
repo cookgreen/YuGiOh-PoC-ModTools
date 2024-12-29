@@ -27,11 +27,6 @@ namespace YuGiOh_PoC_Patcher
             MaximizedBounds = Screen.GetWorkingArea(this);
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void MainMenu_Load(object sender, EventArgs e)
         {
             base.SetVisibleCore(false);
@@ -124,7 +119,7 @@ namespace YuGiOh_PoC_Patcher
             base.Text += Version.actualVerison.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button_ModLauncher_Click(object sender, EventArgs e)
         {
             MessageBox.Show(@"Coming one day, i swear! ¯\_(ツ)_/¯");
         }
@@ -145,28 +140,18 @@ namespace YuGiOh_PoC_Patcher
             YuGiExtendedMethods.SetDefaultGamePath();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button_BaseSettings_Click(object sender, EventArgs e)
         {
             BasicSettings BasicSettings = new BasicSettings();
             BasicSettings.ShowDialog();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void Button_Exit_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void ctlModernBlack1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkLabel_ThePage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void ThePage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("http://derplayer.neocities.org");
         }

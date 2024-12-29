@@ -117,7 +117,7 @@ namespace YuGiOh_PoC_Patcher.YuGi.Launcher
 
             try
             {
-                theGame.StartInfo.Arguments = String.Join(" ", parametersExe);
+                theGame.StartInfo.Arguments = string.Join(" ", parametersExe);
                 theGame.Start();
             }
             catch //When something fucks up try to start with admin rights
